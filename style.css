@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 20px 20px;
+  width: 400px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+  background-color: #adadad;
+  /* linear-gradient(180deg,rgb(184, 183, 183),rgb(112, 112, 112)) */
+  /* #0033cc 
+       #99ffbb*/
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Silkscreen", sans-serif;
+}
+
+.enter-task {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.enter-task input {
+  outline: none;
+  padding: 8px;
+  width: 313px;
+  background-color: white;
+  font-size: 16px;
+  box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.enter-task button {
+  width: 40.54px;
+  height: 40.54px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  /* rgb(25, 190, 25); */
+  box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.3);
+  background-color: #0066ff;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.enter-task button:hover {
+  background-color: white;
+  color: #0066ff;
+}
+
+.enter-task button:active {
+  opacity: 0.7;
+  font-size: 25px;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 08px;
+}
+
+.task {
+  display: flex;
+  position: relative;
+  background-color: white;
+  padding: 8px 18px 8px 18px;
+  border-radius: 10px;
+}
+
+.task .task-detail {
+  font-size: 14px;
+  outline: none;
+  /* pointer-events: all; */
+}
+
+.edit {
+  position: absolute;
+  right: 38px;
+  top: 7px;
+  background-color: transparent;
+  color: #0066ff;
+  cursor: pointer;
+}
+
+.delete {
+  position: absolute;
+  right: 9px;
+  top: 7px;
+  background-color: transparent;
+  color: #0066ff;
+  cursor: pointer;
+}
+
+.task .checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
